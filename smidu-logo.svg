@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600" role="img"><title>Smidu horizontal logo - dark</title><g transform="translate(129.26357112097674,54.99999999999997) scale(0.42132416165090286) translate(-278,-72)"><defs xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="s9-upperBack" gradientUnits="userSpaceOnUse" x1="645" y1="475" x2="1007" y2="652">
+      <stop stop-color="#00103e" /><stop offset=".50" stop-color="#032467" /><stop offset="1" stop-color="#003aad" />
+    </linearGradient>
+    <linearGradient id="s9-upperFold" gradientUnits="userSpaceOnUse" x1="606" y1="479" x2="748" y2="596">
+      <stop stop-color="#073477" /><stop offset="1" stop-color="#003079" />
+    </linearGradient>
+    <linearGradient id="s9-lowerBack" gradientUnits="userSpaceOnUse" x1="294" y1="981" x2="748" y2="904">
+      <stop stop-color="#0078fc" /><stop offset=".30" stop-color="#004ec4" /><stop offset=".66" stop-color="#022b7e" /><stop offset="1" stop-color="#000e3b" />
+    </linearGradient>
+    <linearGradient id="s9-lowerEdge" gradientUnits="userSpaceOnUse" x1="289" y1="1019" x2="536" y2="751">
+      <stop stop-color="#0092ff" /><stop offset=".53" stop-color="#0059e4" /><stop offset="1" stop-color="#003a99" />
+    </linearGradient>
+    <linearGradient id="s9-lowerFold" gradientUnits="userSpaceOnUse" x1="567" y1="756" x2="831" y2="925">
+      <stop stop-color="#0654a5" /><stop offset="1" stop-color="#001344" />
+    </linearGradient>
+    <linearGradient id="s9-lowerLip" gradientUnits="userSpaceOnUse" x1="322" y1="1119" x2="801" y2="883">
+      <stop stop-color="#00cbef" /><stop offset=".34" stop-color="#0087ff" /><stop offset=".75" stop-color="#014aaf" /><stop offset="1" stop-color="#00275e" />
+    </linearGradient>
+    <linearGradient id="s9-lowerFace" gradientUnits="userSpaceOnUse" x1="352" y1="1167" x2="836" y2="953">
+      <stop stop-color="#00a9f5" /><stop offset=".29" stop-color="#0076f7" /><stop offset=".63" stop-color="#0348b6" /><stop offset="1" stop-color="#00113e" />
+    </linearGradient>
+    <linearGradient id="s9-ribbonBase" gradientUnits="userSpaceOnUse" x1="542" y1="310" x2="676" y2="1033">
+      <stop stop-color="#00eceb" /><stop offset=".27" stop-color="#00e6ef" /><stop offset=".60" stop-color="#00edeb" /><stop offset="1" stop-color="#00b0f3" />
+    </linearGradient>
+    <linearGradient id="s9-upperFace" gradientUnits="userSpaceOnUse" x1="480" y1="438" x2="987" y2="215">
+      <stop stop-color="#033b97" /><stop offset=".31" stop-color="#0074c7" /><stop offset=".68" stop-color="#00c8df" /><stop offset="1" stop-color="#00ecea" />
+    </linearGradient>
+    <linearGradient id="s9-upperLip" gradientUnits="userSpaceOnUse" x1="548" y1="493" x2="943" y2="323">
+      <stop stop-color="#06459e" /><stop offset=".32" stop-color="#008cdb" /><stop offset="1" stop-color="#00e8e7" />
+    </linearGradient>
+    <linearGradient id="s9-frontShade" gradientUnits="userSpaceOnUse" x1="328" y1="453" x2="857" y2="815">
+      <stop stop-color="#00cde9" /><stop offset=".34" stop-color="#00a6ee" /><stop offset=".73" stop-color="#00b8ef" /><stop offset="1" stop-color="#00d4ed" />
+    </linearGradient>
+    <linearGradient id="s9-rightFold" gradientUnits="userSpaceOnUse" x1="724" y1="649" x2="970" y2="1002">
+      <stop stop-color="#00deeb" /><stop offset=".53" stop-color="#00ceec" /><stop offset="1" stop-color="#00a9f1" />
+    </linearGradient>
+    </defs>
+
+  <path xmlns="http://www.w3.org/2000/svg" id="s9-continuous-opaque-silhouette" fill="url(#s9-upperBack)" d="M 1007,72 C 1015,209 997,289 914,343 C 866,375 791,400 716,433 C 775,469 874,509 930,558 C 986,607 1014,675 1007,746 C 1040,807 1068,902 1007,975 C 948,1047 824,1081 708,1119 C 621,1142 491,1178 359,1235 C 305,1176 272,1084 279,995 C 285,887 366,790 514,733 C 394,679 316,617 306,531 C 299,486 318,438 354,391 C 407,319 484,270 600,225 C 736,172 886,128 1007,72 Z" /><g xmlns="http://www.w3.org/2000/svg" id="s9-rear-upper-ribbon">
+    <path id="s9-upper-rear-face" fill="url(#s9-upperBack)" d="M 716,433 C 775,469 874,509 930,558 C 986,607 1014,675 1007,746 L 739,595 C 713,542 676,508 625,486 L 600,523 C 613,486 656,458 716,433 Z" />
+    <path id="s9-upper-inner-fold" fill="url(#s9-upperFold)" d="M 625,486 C 681,506 714,542 739,595 L 600,523 C 604,510 614,497 625,486 Z" />
+  </g>
+
+  <g xmlns="http://www.w3.org/2000/svg" id="s9-rear-lower-ribbon">
+    <path id="s9-lower-rear-face" fill="url(#s9-lowerBack)" d="M 514,733 C 366,790 285,887 279,995 C 272,1084 305,1176 359,1235 C 491,1178 621,1142 708,1119 C 846,1071 895,1021 900,974 C 906,925 855,875 780,840 C 674,797 587,756 514,720 L 514,733 Z" />
+    <path id="s9-lower-left-rim" fill="url(#s9-lowerEdge)" d="M 514,733 C 366,790 285,887 279,995 C 274,1060 289,1117 311,1158 C 289,1083 292,1001 320,933 C 365,835 439,794 552,764 L 514,733 Z" />
+    <path id="s9-lower-inner-fold" fill="url(#s9-lowerFold)" d="M 551,735 C 557,819 608,863 700,893 C 772,916 839,948 900,964 C 896,921 848,886 780,856 L 551,735 Z" />
+    <path id="s9-lower-turned-edge" fill="url(#s9-lowerLip)" d="M 780,856 C 683,901 568,936 458,979 C 366,1014 314,1068 310,1121 C 307,1159 328,1203 359,1235 L 399,1218 C 356,1172 343,1138 351,1104 C 363,1053 422,1015 504,984 C 596,949 709,922 833,883 L 780,856 Z" />
+    <path id="s9-lower-front-face" fill="url(#s9-lowerFace)" d="M 833,883 C 710,922 598,949 504,984 C 422,1015 363,1053 351,1104 C 339,1151 356,1197 359,1235 C 490,1178 621,1142 708,1119 C 817,1082 895,1029 900,974 C 904,930 867,896 822,872 L 833,883 Z" />
+  </g>
+
+  <g xmlns="http://www.w3.org/2000/svg" id="s9-front-ribbon">
+    <path id="s9-continuous-ribbon" fill="url(#s9-ribbonBase)" d="M 1007,72 C 886,128 736,172 600,225 C 484,270 407,319 354,391 C 318,438 299,486 306,531 C 316,617 394,679 514,733 C 612,777 730,823 822,872 C 867,896 904,930 900,974 C 895,1029 817,1082 708,1119 C 824,1081 948,1047 1007,975 C 1068,902 1040,807 1007,746 C 961,680 823,627 684,565 C 655,552 626,538 600,523 C 490,474 447,417 482,342 C 507,286 564,254 645,223 C 773,174 905,128 1007,72 Z" />
+    <path id="s9-left-ribbon-shading" fill="url(#s9-frontShade)" d="M 464,395 C 440,490 509,557 652,630 C 748,679 831,712 874,769 C 909,816 916,871 911,916 C 887,862 811,817 718,775 C 616,729 532,696 445,649 C 356,601 317,540 343,454 C 365,382 430,325 516,283 C 576,254 646,231 700,220 C 544,277 464,344 464,395 Z" />
+    <path id="s9-upper-front-face" fill="url(#s9-upperFace)" d="M 1007,72 C 905,128 773,174 645,223 C 564,254 507,286 482,342 C 447,417 490,474 600,523 C 614,484 655,460 716,433 C 791,400 866,375 914,343 C 997,289 1015,209 1007,72 Z" />
+    <path id="s9-upper-turned-edge" fill="url(#s9-upperLip)" d="M 600,523 C 614,484 655,460 716,433 C 791,400 866,375 914,343 C 951,318 976,285 990,246 C 960,303 900,327 830,354 C 759,382 683,402 626,433 C 580,457 551,480 542.128,492.56 C 558.68,503.08 578,513.2 600,523 Z" />
+
+    <path id="s9-right-ribbon-shading" fill="url(#s9-rightFold)" d="M 652,630 C 748,679 831,712 874,769 C 909,816 916,871 911,916 C 917,951 896,1002 865,1031 C 838,1058 801,1081 761,1100 C 854,1067 947,1025 994,968 C 1050,902 1030,827 1007,781 C 970,728 865,692 786,661 C 744,647 698,639 652,630 Z" opacity=".55" />
+    </g>
+</g><g fill="#FFFFFF" transform="translate(525.9433207709152,402.5027027027027) scale(0.28472972972972976, -0.28472972972972976)"><path d="M40 369Q40 414 69.5 450.5Q99 487 152.5 508.5Q206 530 274 530Q341 530 395.5 509.5Q450 489 482.0 457.0Q514 425 517 390Q518 379 509.5 371.0Q501 363 490 363H371Q360 363 345 374Q332 384 317.0 389.5Q302 395 274 395Q250 395 235.0 388.0Q220 381 220 367Q220 355 225.5 349.0Q231 343 245.5 340.0Q260 337 296 332L358 322Q445 308 488.5 262.5Q532 217 532 154Q532 109 501.5 71.5Q471 34 413.5 12.0Q356 -10 278 -10Q203 -10 147.5 11.5Q92 33 62.5 66.0Q33 99 30 133Q29 144 37.5 152.0Q46 160 57 160H181Q188 160 192.5 157.5Q197 155 203 149Q215 138 230.0 131.5Q245 125 278 125Q309 125 330.5 133.5Q352 142 352 156Q352 172 336.5 177.5Q321 183 270 191L198 203Q122 217 81.0 259.5Q40 302 40 369Z" transform="translate(0,0)"/><path d="M851 0H730Q719 0 711.0 8.0Q703 16 703 27V283Q703 331 685.0 353.0Q667 375 630 375Q594 375 576.0 353.0Q558 331 558 283V27Q558 16 550.0 8.0Q542 0 531 0H410Q399 0 391.0 8.0Q383 16 383 27V283Q383 331 365.0 353.0Q347 375 310 375Q238 375 238 286V27Q238 16 230.0 8.0Q222 0 211 0H85Q74 0 66.0 8.0Q58 16 58 27V493Q58 504 66.0 512.0Q74 520 85 520H206Q217 520 225.0 512.0Q233 504 233 493V470Q280 530 360 530Q412 530 453.0 510.5Q494 491 520 452Q549 490 590.5 510.0Q632 530 680 530Q771 530 824.5 473.0Q878 416 878 302V27Q878 16 870.0 8.0Q862 0 851 0Z" transform="translate(544.0,0)"/><path d="M58 0H238V520H58Z M238 640A90 90 0 1 0 58 640A90 90 0 1 0 238 640Z" transform="translate(1457.0,0)"/><path d="M396 683Q396 694 404.0 702.0Q412 710 423 710H549Q560 710 568.0 702.0Q576 694 576 683V27Q576 16 568.0 8.0Q560 0 549 0H428Q417 0 409.0 8.0Q401 16 401 27V50Q385 31 370.5 19.0Q356 7 329.5 -1.5Q303 -10 262 -10Q167 -10 104.5 48.0Q42 106 38 219L37 260L38 300Q42 413 104.0 471.5Q166 530 262 530Q314 530 346.0 512.0Q378 494 396 470ZM307 145Q348 145 369.5 168.0Q391 191 396 225Q398 235 398 260Q398 285 396 295Q392 328 370.0 351.5Q348 375 307 375Q263 375 241.5 351.0Q220 327 217 288Q216 278 216 260Q216 242 217 232Q220 193 241.5 169.0Q263 145 307 145Z" transform="translate(1735.0,0)"/><path d="M80 520H206Q217 520 225.0 512.0Q233 504 233 493V240Q233 195 253.0 170.0Q273 145 315 145Q396 145 396 240V493Q396 504 404.0 512.0Q412 520 423 520H549Q560 520 568.0 512.0Q576 504 576 493V27Q576 16 568.0 8.0Q560 0 549 0H433Q422 0 414.0 8.0Q406 16 406 27V50Q385 24 352.5 7.0Q320 -10 265 -10Q165 -10 109.0 47.0Q53 104 53 218V493Q53 504 61.0 512.0Q69 520 80 520Z" transform="translate(2351.0,0)"/></g></svg>

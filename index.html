@@ -1,6 +1,281 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>smidu.dev</title>
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0B1020;color:#F2F2F2;font-family:system-ui,sans-serif}</style></head>
-<body><p>smidu.dev — coming soon</p></body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smidu — from idea to working software</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div style="min-height: 100vh; background: #0B1020; color: #F2F2F2; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.55; overflow: hidden; overflow: clip">
+
+<div style="position: relative">
+<div class="grid" aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(104,178,224,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(104,178,224,0.07) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse 70% 75% at 60% 30%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse 70% 75% at 60% 30%, #000 20%, transparent 75%); pointer-events: none"></div>
+<div class="blobA" aria-hidden="true" style="position: absolute; right: -140px; top: -80px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(20,98,166,0.42), rgba(20,98,166,0) 65%); pointer-events: none"></div>
+<div class="blobB" aria-hidden="true" style="position: absolute; left: -220px; top: 260px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(5,242,242,0.10), rgba(5,242,242,0) 65%); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 120px; height: 0; pointer-events: none">
+<span class="spark" style="position: absolute; left: 12%; width: 3px; height: 3px; border-radius: 50%; background: #05F2F2; animation-delay: 0s"></span>
+<span class="spark" style="position: absolute; left: 31%; width: 2px; height: 2px; border-radius: 50%; background: #68B2E0; animation-delay: 2.2s"></span>
+<span class="spark" style="position: absolute; left: 54%; width: 3px; height: 3px; border-radius: 50%; background: #05F2F2; animation-delay: 4.1s"></span>
+<span class="spark" style="position: absolute; left: 73%; width: 2px; height: 2px; border-radius: 50%; background: #68B2E0; animation-delay: 1.3s"></span>
+<span class="spark" style="position: absolute; left: 90%; width: 3px; height: 3px; border-radius: 50%; background: #05F2F2; animation-delay: 5.4s"></span>
+</div>
+
+<header style="position: relative; max-width: 1200px; margin: 0 auto; padding: 24px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; text-decoration: none">
+<img src="smidu-logo.svg" alt="smidu" style="height: 44px; width: auto; display: block">
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px">
+<a href="#how" style="text-decoration: none; color: #C3CDD9">How it works</a>
+<a href="#live" style="text-decoration: none; color: #C3CDD9">Live</a>
+<a href="#built" style="text-decoration: none; color: #C3CDD9">Built by itself</a>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px; border: 1px solid #435B78; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #F2F2F2">
+<span class="ringdot" style="position: relative; width: 8px; height: 8px; border-radius: 50%; background: #05F2F2"></span>Working MVP</span>
+</nav>
+</header>
+
+<section id="top" style="position: relative; max-width: 1200px; margin: 0 auto; padding: 96px 24px 72px">
+<p class="rise" style="margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #A9B4C3">smida <span style="color: #7186A1">/ˈsmiːda/</span> — Swedish, to forge</p>
+<h1 style="margin: 0; max-width: 900px; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: clamp(48px, 8vw, 104px); line-height: 1; letter-spacing: -0.045em">
+<span style="display: block; overflow: hidden; padding-bottom: 0.06em"><span class="unmask" style="animation-delay: 0.1s">From idea</span></span>
+<span style="display: block; overflow: hidden; padding-bottom: 0.2em"><span class="unmask" style="animation-delay: 0.28s">to <span style="position: relative; display: inline-block">working software.<svg aria-hidden="true" viewBox="0 0 600 14" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -0.13em; width: 100%; height: 0.12em; overflow: visible"><path class="draw" d="M2 9 C 150 2, 320 13, 598 5" fill="none" stroke="#05F2F2" stroke-width="5" stroke-linecap="round"></path></svg></span></span></span>
+</h1>
+<p class="rise" style="animation-delay: 0.5s; margin: 28px 0 0; max-width: 620px; font-size: 20px; color: #C3CDD9">Describe what you want. Smidu plans it in milestones, writes the code, reviews it, runs the tests and merges it. You approve. Nothing else.</p>
+<div class="rise" style="animation-delay: 0.65s; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px">
+<a class="btn" href="#live" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #1462A6; color: #FFFFFF; font-weight: 600; text-decoration: none">Watch it build<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<a class="btn" href="#how" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; border: 1px solid #435B78; color: #F2F2F2; font-weight: 600; text-decoration: none">How it works</a>
+</div>
+
+<div class="rise" aria-label="The path every story takes" role="img" style="animation-delay: 0.85s; margin-top: 88px; position: relative; padding: 8px 0">
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #283B55"></div>
+<div class="fill" aria-hidden="true"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 50%; height: 0; overflow: visible"><div class="pulse"></div></div>
+<div style="position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
+<div class="node" style="animation-delay: 0s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">01</span>Idea</div>
+<div class="node" style="animation-delay: 1s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">02</span>Plan</div>
+<div class="node" style="animation-delay: 2s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">03</span>Develop</div>
+<div class="node" style="animation-delay: 3s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">04</span>Review</div>
+<div class="node" style="animation-delay: 4s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">05</span>CI</div>
+<div class="node" style="animation-delay: 5s; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: #111827; border: 1px solid #283B55; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #DCE3EC">
+<span style="color: #7186A1">06</span>Merged</div>
+</div>
+</div>
+</section>
+</div>
+
+<section id="live" style="position: relative; border-top: 1px solid #1A2740; background: #0D1630">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+
+<div class="sr" data-region="terminal" style="flex: 999 1 520px; min-width: 0; background: #070B16; border: 1px solid #283B55; border-radius: 16px; overflow: hidden; box-shadow: 0 30px 80px rgba(1,17,64,0.6)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #1A2740">
+<span style="display: inline-flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9B4C3"><span class="live" style="width: 8px; height: 8px; border-radius: 50%; background: #05F2F2"></span>supervisor</span>
+<span data-build="repository" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7186A1">smidu-dev/smidu-site</span>
+</div>
+<div style="padding: 24px 20px 28px; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.9; color: #C3CDD9">
+<div><span style="display: inline-block; min-width: 13ch; color: #7186A1">story</span><span data-build="story" style="color: #F2F2F2">5.4 The check rehearses publishing against a local Git repository</span></div>
+<div style="margin-bottom: 14px"><span style="display: inline-block; min-width: 13ch; color: #7186A1">latest build</span><span data-build="time">19:31</span></div>
+<div data-stage style="color: #C3CDD9; transition: color 0.4s"><span data-mark style="display: inline-block; min-width: 3ch; color: #05F2F2; transition: color 0.4s">✓</span><span style="display: inline-block; min-width: 10ch">develop</span><span data-detail></span><span class="cursor" style="display: none; width: 9px; height: 17px; margin-left: 8px; vertical-align: -3px; background: #68B2E0"></span></div>
+<div data-stage style="color: #C3CDD9; transition: color 0.4s"><span data-mark style="display: inline-block; min-width: 3ch; color: #05F2F2; transition: color 0.4s">✓</span><span style="display: inline-block; min-width: 10ch">tests</span><span data-detail>bash scripts/verify.sh</span><span class="cursor" style="display: none; width: 9px; height: 17px; margin-left: 8px; vertical-align: -3px; background: #68B2E0"></span></div>
+<div data-stage style="color: #C3CDD9; transition: color 0.4s"><span data-mark style="display: inline-block; min-width: 3ch; color: #05F2F2; transition: color 0.4s">✓</span><span style="display: inline-block; min-width: 10ch">review</span><span data-detail>independent reviewer, read-only</span><span class="cursor" style="display: none; width: 9px; height: 17px; margin-left: 8px; vertical-align: -3px; background: #68B2E0"></span></div>
+<div data-stage style="color: #C3CDD9; transition: color 0.4s"><span data-mark style="display: inline-block; min-width: 3ch; color: #05F2F2; transition: color 0.4s">✓</span><span style="display: inline-block; min-width: 10ch">ci</span><span data-detail>required checks</span><span class="cursor" style="display: none; width: 9px; height: 17px; margin-left: 8px; vertical-align: -3px; background: #68B2E0"></span></div>
+<div data-stage style="color: #C3CDD9; transition: color 0.4s"><span data-mark style="display: inline-block; min-width: 3ch; color: #05F2F2; transition: color 0.4s">✓</span><span style="display: inline-block; min-width: 10ch">merge</span><span data-detail></span><span class="cursor" style="display: none; width: 9px; height: 17px; margin-left: 8px; vertical-align: -3px; background: #68B2E0"></span></div>
+<div data-build="merged" style="margin-top: 14px; color: #05F2F2; visibility: visible">merged into main · pull request #57</div>
+</div>
+<div aria-hidden="true" style="height: 3px; background: #111827"><div data-build="progress" style="height: 3px; width: 100%; background: linear-gradient(90deg, #1462A6, #05F2F2); transition: width 0.9s cubic-bezier(.2,.7,.2,1)"></div></div>
+</div>
+
+<div data-region="stats" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div class="card sr" style="flex: 1 1 auto; padding: 22px 24px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: #F2F2F2" data-count="merged_prs">127</div>
+<div style="margin-top: 8px; font-size: 15px; color: #A9B4C3">pull requests merged by Smidu</div>
+</div>
+<div class="card sr" style="flex: 1 1 auto; padding: 22px 24px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: #F2F2F2" data-count="fixed">14</div>
+<div style="margin-top: 8px; font-size: 15px; color: #A9B4C3">stories built in one evening, 15 Nov</div>
+</div>
+<div class="card sr" style="flex: 1 1 auto; padding: 22px 24px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: #F2F2F2" data-count="apps_in_queue">3</div>
+<div style="margin-top: 8px; font-size: 15px; color: #A9B4C3">apps in the queue right now</div>
+</div>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8FA0B6">Read live from Supervisor and GitHub.</p>
+</div>
+
+</div>
+
+<div class="tickerbox" aria-hidden="true" style="border-top: 1px solid #1A2740; border-bottom: 1px solid #1A2740; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)">
+<div class="track" style="display: flex; width: max-content; padding: 16px 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; white-space: nowrap; color: #A9B4C3; animation-duration: 144s">
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.4</span>The check rehearses publishing against a local Git repository</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.3</span>One command installs the 15-minute publish timer</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.2</span>One publish run updates main, builds, checks and pushes the page only when it changed</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.1</span>A built page is checked for private data, outside hosts, forms and tracking</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.7</span>Inter and JetBrains Mono come from the site itself</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.6</span>The check shows the page at 360px, with reduced motion and next to the design</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.5</span>The whole page fits a 360px phone and stands still with reduced motion</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.4</span>Sections fade in, cards lift and buttons get a sweep</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.3</span>How it works, the honest block and the footer</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.2</span>The pipeline with its travelling pulse</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.1</span>The hero moves as designed</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.8</span>The check shows how many apps the band comes from</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.7</span>The band keeps the design&#x27;s pace with 24 stories</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.6</span>The band holds the latest 24 built stories across every app</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.5</span>The check shows the timeline and the band</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.4</span>The band of built stories scrolls by and pauses on hover</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.3</span>Collect the band of stories built across every app</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.2</span>The &quot;Built by itself&quot; section shows the timeline</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.1</span>Collect the latest stories merged into the Smidu repository</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.6</span>The check shows what the build panel showed</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.5</span>The panel shows the live build and its stage</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.4</span>Collect the build Supervisor is working on right now</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.3</span>The panel replays the latest merged builds step by step</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.2</span>The build panel shows the latest merged build</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.4</span>The check rehearses publishing against a local Git repository</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.3</span>One command installs the 15-minute publish timer</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.2</span>One publish run updates main, builds, checks and pushes the page only when it changed</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">5.1</span>A built page is checked for private data, outside hosts, forms and tracking</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.7</span>Inter and JetBrains Mono come from the site itself</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.6</span>The check shows the page at 360px, with reduced motion and next to the design</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.5</span>The whole page fits a 360px phone and stands still with reduced motion</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.4</span>Sections fade in, cards lift and buttons get a sweep</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.3</span>How it works, the honest block and the footer</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.2</span>The pipeline with its travelling pulse</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">4.1</span>The hero moves as designed</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.8</span>The check shows how many apps the band comes from</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.7</span>The band keeps the design&#x27;s pace with 24 stories</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.6</span>The band holds the latest 24 built stories across every app</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.5</span>The check shows the timeline and the band</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.4</span>The band of built stories scrolls by and pauses on hover</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.3</span>Collect the band of stories built across every app</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.2</span>The &quot;Built by itself&quot; section shows the timeline</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">3.1</span>Collect the latest stories merged into the Smidu repository</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.6</span>The check shows what the build panel showed</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.5</span>The panel shows the live build and its stage</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.4</span>Collect the build Supervisor is working on right now</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.3</span>The panel replays the latest merged builds step by step</span>
+<span data-again style="display: inline-flex; align-items: center; gap: 10px; padding: 0 28px"><span style="color: #05F2F2">✓</span><span style="color: #68B2E0">2.2</span>The build panel shows the latest merged build</span>
+</div>
+</div>
+</section>
+
+<section id="how" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px 40px">
+<p class="sr" style="margin: 0 0 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #68B2E0">How it works</p>
+<h2 class="sr" style="margin: 0; max-width: 760px; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.04; letter-spacing: -0.035em">You decide what gets built. The machine does the rest.</h2>
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 20px">
+<article class="card sr" style="flex: 1 1 250px; min-width: 0; padding: 28px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">01</div>
+<h3 style="margin: 20px 0 10px; font-family: Inter, system-ui, sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Describe</h3>
+<p style="margin: 0; font-size: 16px; color: #A9B4C3">Write the idea in plain words. The planner says what it understood and asks before it plans.</p>
+</article>
+<article class="card sr" style="flex: 1 1 250px; min-width: 0; padding: 28px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">02</div>
+<h3 style="margin: 20px 0 10px; font-family: Inter, system-ui, sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Plan</h3>
+<p style="margin: 0; font-size: 16px; color: #A9B4C3">Milestones in order, each saying what you can do when it is done. Stories for one milestone at a time.</p>
+</article>
+<article class="card sr" style="flex: 1 1 250px; min-width: 0; padding: 28px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">03</div>
+<h3 style="margin: 20px 0 10px; font-family: Inter, system-ui, sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Approve</h3>
+<p style="margin: 0; font-size: 16px; color: #A9B4C3">One decision approves a milestone. Nothing is built that you did not say yes to.</p>
+</article>
+<article class="card sr" style="flex: 1 1 250px; min-width: 0; padding: 28px; background: #111827; border: 1px solid #283B55; border-radius: 16px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">04</div>
+<h3 style="margin: 20px 0 10px; font-family: Inter, system-ui, sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Build</h3>
+<p style="margin: 0; font-size: 16px; color: #A9B4C3">A developer writes it in a sandbox, a reviewer that cannot write checks it, CI tests it, then it merges.</p>
+</article>
+</div>
+</section>
+
+<section id="built" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 40px; display: flex; flex-wrap: wrap; gap: 48px">
+<div class="sr" style="flex: 1 1 340px; min-width: 0">
+<p style="margin: 0 0 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #68B2E0">Built by itself</p>
+<h2 style="margin: 0; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.04; letter-spacing: -0.035em">Smidu is built by Smidu.</h2>
+<p style="margin: 24px 0 0; color: #A9B4C3">Its own queue, self-update and installer were planned as stories and built by its own Supervisor: fourteen stories in one evening, each one developed, reviewed, tested and merged without a human touching the code.</p>
+</div>
+<ol data-region="timeline" style="flex: 999 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; border-left: 1px solid #283B55">
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 0s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">07:31</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">5.8</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">Stopped work is tried again after an update</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 0.45s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">06:42</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">5.7</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">The reviewer sees the milestone screenshots</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 0.9s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">05:54</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">5.6</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">A new app builds with no operator step</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 1.35s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">16 Nov 17:29</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">2.10</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">New apps are created in the organization</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 1.8s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">16 Nov 15:37</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">5.5</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">Install from the install script alone</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+<li class="row sr" style="position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 14px 0 14px 28px; border-bottom: 1px solid #1A2740">
+<span class="ringdot" aria-hidden="true" style="position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: #05F2F2; animation-delay: 2.25s"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">16 Nov 00:32</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #68B2E0">5.4</span>
+<span style="flex: 1 1 240px; min-width: 0; overflow-wrap: anywhere; color: #DCE3EC">One command installs Smidu</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #05F2F2">merged</span>
+</li>
+</ol>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 112px">
+<div class="sr" style="position: relative; display: flex; flex-wrap: wrap; gap: 40px; padding: 48px; background: #111827; border: 1px solid #283B55; border-radius: 20px; overflow: hidden">
+<div class="blobB" aria-hidden="true" style="position: absolute; right: -160px; bottom: -220px; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(circle, rgba(20,98,166,0.35), rgba(20,98,166,0) 65%); pointer-events: none"></div>
+<div style="position: relative; flex: 1 1 320px; min-width: 0">
+<h2 style="margin: 0; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1; letter-spacing: -0.03em">A working MVP.<br>Honestly.</h2>
+<p style="margin: 20px 0 0; color: #A9B4C3">Smidu runs privately on one machine for one owner. It is not a service you can sign up for — yet. This page shows what it does today.</p>
+</div>
+<div style="position: relative; flex: 1 1 260px; min-width: 0">
+<h3 style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #05F2F2">Works today</h3>
+<ul style="margin: 0; padding: 0 0 0 18px; color: #DCE3EC">
+<li>Idea to milestones to stories</li>
+<li>Build, independent review, CI, merge</li>
+<li>Several apps from one queue</li>
+<li>Updates and installs itself</li>
+</ul>
+</div>
+<div style="position: relative; flex: 1 1 260px; min-width: 0">
+<h3 style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #C3CDD9">Not yet</h3>
+<ul style="margin: 0; padding: 0 0 0 18px; color: #A9B4C3">
+<li>Accounts for other people</li>
+<li>Public hosting</li>
+<li>A week without an operator</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #1A2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8FA0B6">
+<span>smidu.dev — built by Smidu</span>
+<span>From idea to working software.</span>
+</div>
+</footer>
+
+</div>
+<script type="application/json" id="site-data">{"latest_builds":[{"pr":57,"repository":"smidu-dev/smidu-site","story":"5.4","time":"19:31","title":"The check rehearses publishing against a local Git repository"},{"pr":56,"repository":"smidu-dev/smidu-site","story":"5.3","time":"19:13","title":"One command installs the 15-minute publish timer"},{"pr":55,"repository":"smidu-dev/smidu-site","story":"5.2","time":"18:50","title":"One publish run updates main, builds, checks and pushes the page only when it changed"},{"pr":54,"repository":"smidu-dev/smidu-site","story":"5.1","time":"18:31","title":"A built page is checked for private data, outside hosts, forms and tracking"}],"live":null,"stats":{"apps_in_queue":3,"merged_prs":127}}</script>
+<script src="app.js"></script>
+</body>
 </html>
