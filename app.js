@@ -173,9 +173,18 @@
     for (var i = 0; i < lines.length; i++) startWhenInView(lines[i], lines[i].parentElement, 'growing');
   }
 
+  // The bars of How we got here's chart wait undrawn and grow from the left once the chart
+  // enters the view; their strike lines draw themselves 1.6s after (their CSS delay). The
+  // chart panel is watched, not the bars, because an undrawn bar has no width.
+  function drawWhenInView() {
+    var parts = document.querySelectorAll('#origin .bar, #origin .strike');
+    for (var i = 0; i < parts.length; i++) startWhenInView(parts[i], parts[i].closest('.sr'), 'drawing');
+  }
+
   if (reducedMotion()) return;
   typeWhenInView();
   growWhenInView();
+  drawWhenInView();
   var data = readData();
   countUp(data);
   replay(data);

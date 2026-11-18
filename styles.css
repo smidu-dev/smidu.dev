@@ -86,3 +86,14 @@ a{color:#F2F2F2}a:hover{color:#A7D3FF}
 @supports (animation-timeline: view()){.stage.sr{animation:srin linear backwards,stagelight 8s linear infinite;animation-timeline:view(),auto;animation-range:entry 0% entry 60%,normal}}
 /* With reduced motion the steps stand still: no pulse, every card unlit and shown. */
 @media (prefers-reduced-motion: reduce){.lanepulse{display:none}.stage,.stage.sr{animation:none}}
+/* How we got here: the bars of the chart grow from the left and the two systems that never shipped are
+   struck through 1.6s later. Without the script both are drawn as they are; app.js marks them waiting
+   (undrawn) and starts them once the chart enters the view. */
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes strike{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.bar,.strike{transform-origin:left}
+.bar.waiting,.strike.waiting{transform:scaleX(0)}
+.bar.drawing{animation:bar 1.4s cubic-bezier(.2,.7,.2,1) both}
+.strike.drawing{animation:strike .6s cubic-bezier(.2,.7,.2,1) 1.6s both}
+/* With reduced motion every bar is at its full width and both strike lines are drawn. */
+@media (prefers-reduced-motion: reduce){.bar.waiting,.bar.drawing,.strike.waiting,.strike.drawing{transform:none;animation:none}}
