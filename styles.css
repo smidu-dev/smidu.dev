@@ -76,3 +76,13 @@ a{color:#F2F2F2}a:hover{color:#A7D3FF}
 .spine.growing{animation:grow 1.6s cubic-bezier(.2,.7,.2,1) both}
 /* With reduced motion the line is fully drawn and does not grow. */
 @media (prefers-reduced-motion: reduce){.spine.waiting,.spine.growing{transform:none;animation:none}}
+/* Inside a story: a pulse runs along the line above the eight step cards every 8 seconds and the
+   cards light up in turn, each one second after the one before it (its inline animation-delay).
+   Named apart from the hero's .pulse, .node and light, which run every 6 seconds. */
+@keyframes stagelight{0%,100%{border-color:#283B55;box-shadow:none}6%,18%{border-color:#05F2F2;box-shadow:0 0 0 5px rgba(5,242,242,.10),0 0 24px rgba(5,242,242,.22)}}
+.lanepulse{position:absolute;top:0;width:84px;height:2px;transform:translateX(-84px);background:linear-gradient(90deg,rgba(5,242,242,0),#05F2F2);animation:travel 8s linear infinite}
+.stage{animation:stagelight 8s linear infinite}
+/* A step card both fades in on scroll and lights up on the clock, so it runs the two together. */
+@supports (animation-timeline: view()){.stage.sr{animation:srin linear backwards,stagelight 8s linear infinite;animation-timeline:view(),auto;animation-range:entry 0% entry 60%,normal}}
+/* With reduced motion the steps stand still: no pulse, every card unlit and shown. */
+@media (prefers-reduced-motion: reduce){.lanepulse{display:none}.stage,.stage.sr{animation:none}}
