@@ -139,31 +139,43 @@
     });
   }
 
-  // The parts marked `typed` type themselves in once they enter the view, not while they
-  // are still below the fold: each waits clipped (by its `waiting` class) until it enters
-  // the view, then `typing` runs the design's animation once. Without the script, or
-  // without IntersectionObserver, they are simply shown.
-  function typeWhenInView() {
+  // A part that waits until it enters the view: it is marked `waiting` (which holds it at
+  // the start of its animation) until `watched` enters the view, then `started` runs the
+  // design's animation once. Without the script, or without IntersectionObserver, it is
+  // simply shown as it ends.
+  function startWhenInView(part, watched, started) {
     if (!('IntersectionObserver' in window)) return;
-    var parts = document.querySelectorAll('.typed');
-    if (!parts.length) return;
     var observer = new IntersectionObserver(function (entries) {
       for (var i = 0; i < entries.length; i++) {
         if (!entries[i].isIntersecting) continue;
-        var el = entries[i].target;
-        observer.unobserve(el);
-        el.classList.remove('waiting');
-        el.classList.add('typing');
+        observer.disconnect();
+        part.classList.remove('waiting');
+        part.classList.add(started);
+        return;
       }
     }, { threshold: 0 });
-    for (var j = 0; j < parts.length; j++) {
-      parts[j].classList.add('waiting');
-      observer.observe(parts[j]);
-    }
+    part.classList.add('waiting');
+    observer.observe(watched);
+  }
+
+  // The parts marked `typed` type themselves in once they enter the view, not while they
+  // are still below the fold: each waits clipped until then.
+  function typeWhenInView() {
+    var parts = document.querySelectorAll('.typed');
+    for (var i = 0; i < parts.length; i++) startWhenInView(parts[i], parts[i], 'typing');
+  }
+
+  // The line of the case study's timeline (`spine`) waits undrawn and grows from top to
+  // bottom once its list enters the view. The list is watched, not the line, because the
+  // undrawn line has no height.
+  function growWhenInView() {
+    var lines = document.querySelectorAll('.spine');
+    for (var i = 0; i < lines.length; i++) startWhenInView(lines[i], lines[i].parentElement, 'growing');
   }
 
   if (reducedMotion()) return;
   typeWhenInView();
+  growWhenInView();
   var data = readData();
   countUp(data);
   replay(data);

@@ -68,3 +68,11 @@ a{color:#F2F2F2}a:hover{color:#A7D3FF}
 .typed.typing{animation:typein 1.8s steps(48,end) .4s both}
 /* With reduced motion the idea is fully shown and does not type. */
 @media (prefers-reduced-motion: reduce){.typed.waiting,.typed.typing{clip-path:none;animation:none}}
+/* The case study's timeline line grows from top to bottom. Without the script it is drawn as it is;
+   app.js marks it waiting (undrawn) and starts the growing once its list enters the view. */
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.spine{transform-origin:top}
+.spine.waiting{transform:scaleY(0)}
+.spine.growing{animation:grow 1.6s cubic-bezier(.2,.7,.2,1) both}
+/* With reduced motion the line is fully drawn and does not grow. */
+@media (prefers-reduced-motion: reduce){.spine.waiting,.spine.growing{transform:none;animation:none}}
