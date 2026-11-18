@@ -61,3 +61,10 @@ a{color:#F2F2F2}a:hover{color:#A7D3FF}
 @media (prefers-reduced-motion: reduce){.track{flex-wrap:wrap;justify-content:center;row-gap:8px;width:auto!important;padding:16px 12%!important;white-space:normal!important}.track [data-again]{display:none!important}}
 /* With reduced motion the pipeline stands still: no fill, no pulse, every stage unlit. */
 @media (prefers-reduced-motion: reduce){.pulse,.fill{display:none}.node{animation:none}}
+/* The idea in the case study types itself in from left to right. Without the script it is shown as it is;
+   app.js marks it waiting (clipped) and starts the typing once it enters the view. */
+@keyframes typein{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.typed.waiting{clip-path:inset(0 100% 0 0)}
+.typed.typing{animation:typein 1.8s steps(48,end) .4s both}
+/* With reduced motion the idea is fully shown and does not type. */
+@media (prefers-reduced-motion: reduce){.typed.waiting,.typed.typing{clip-path:none;animation:none}}

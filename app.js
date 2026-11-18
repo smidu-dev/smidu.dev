@@ -139,7 +139,31 @@
     });
   }
 
+  // The parts marked `typed` type themselves in once they enter the view, not while they
+  // are still below the fold: each waits clipped (by its `waiting` class) until it enters
+  // the view, then `typing` runs the design's animation once. Without the script, or
+  // without IntersectionObserver, they are simply shown.
+  function typeWhenInView() {
+    if (!('IntersectionObserver' in window)) return;
+    var parts = document.querySelectorAll('.typed');
+    if (!parts.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (!entries[i].isIntersecting) continue;
+        var el = entries[i].target;
+        observer.unobserve(el);
+        el.classList.remove('waiting');
+        el.classList.add('typing');
+      }
+    }, { threshold: 0 });
+    for (var j = 0; j < parts.length; j++) {
+      parts[j].classList.add('waiting');
+      observer.observe(parts[j]);
+    }
+  }
+
   if (reducedMotion()) return;
+  typeWhenInView();
   var data = readData();
   countUp(data);
   replay(data);
